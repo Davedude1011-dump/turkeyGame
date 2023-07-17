@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.ground {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url("images/GRASS.jpg");
+    background-size: 30%;
+    overflow: hidden;
+}
+.fence-area {
+    width: 30vw;
+    height: 30vh;
+
+    background-image: url("images/WOOD.jpg");
+    background-size: 20%;
+    border: 5px rgb(51, 23, 0) solid;
+
+    margin: 1vw;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.turkey {
+    position: absolute;
+
+    width: 100px;
+    aspect-ratio: 1/1;
+    
+    background-image: url("images/TURKEY.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 8s;
+
+    cursor: pointer;
+}
+.turkey-bucks-counter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: xx-large;
+    font-family: sans-serif;
+    margin: 1vw;
+    color: white;
+    font-weight: bold;
+}
+
+.new-turkey-button {
+    width: 40%;
+    height: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+
+    background-color: rgb(61, 26, 5);
+    border: 2px solid rgb(161, 66, 6);
+
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+.new-turkey-button:hover {
+    filter: brightness(90%)
+}
+
+.tutorial-text {
+    width: 30vw;
+    position: absolute;
+    left: 1vw;
+    bottom: 1vw;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
